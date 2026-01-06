@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric Conversions</title>
+
+    <!-- ===============CSS LINK START=============== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- ===============CSS LINK=============== -->
+
+<!-- ===============HEADER START=============== -->
+
+<body>
+
+    <div class="top-header">
+        <h1>Metric Conversion</h1>
+        <img src="images/logo.png" class="header-logo">
+    </div>
+
+    <!-- ===============HEADER END=============== -->
+
+    <!-- ===============NAVBAR START=============== -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown"><a href="#length">Length ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Sub Pages/length.html">Length</a></li>
+                    <li><a href="Sub Pages/length-millimeter.html">Millimeter (mm)</a></li>
+                    <li><a href="Sub Pages/length-centimeter.html">Centimeter (cm)</a></li>
+                    <li><a href="Sub Pages/length-meter.html">Meter (m)</a></li>
+                    <li><a href="Sub Pages/length-kilometer.html">Kilometer (km)</a></li>
+                    <li><a href="Sub Pages/length-inch.html">Inch (in)</a></li>
+                    <li><a href="Sub Pages/length-foot.html">Foot (ft)</a></li>
+                    <li><a href="Sub Pages/length-yard.html">Yard (yd)</a></li>
+                    <li><a href="Sub Pages/length-mile.html">Mile (mi)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#area">Area ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Sub Pages/area.html">Area</a></li>
+                    <li><a href="Sub Pages/area-square-millimeter.html">Square Millimeter (mm²)</a></li>
+                    <li><a href="Sub Pages/area-square-meter.html">Square Meter (m²)</a></li>
+                    <li><a href="Sub Pages/area-hectare.html">Hectare (ha)</a></li>
+                    <li><a href="Sub Pages/area-square-kilometer.html">Square Kilometer (km²)</a></li>
+                    <li><a href="Sub Pages/area-square-inch.html">Square Inch (in²)</a></li>
+                    <li><a href="Sub Pages/area-square-foot.html">Square Foot (ft²)</a></li>
+                    <li><a href="Sub Pages/area-square-yard.html">Square Yard (yd²)</a></li>
+                    <li><a href="Sub Pages/area-acre.html">Acre</a></li>
+                    <li><a href="Sub Pages/area-square-mile.html">Square Mile (mi²)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#volume">Volume ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Sub Pages/vol.html">Volume</a></li>
+                    <li><a href="Sub Pages/vol-milliliter.html">Milliliter (mL)</a></li>
+                    <li><a href="Sub Pages/vol-liter.html">Liter (L)</a></li>
+                    <li><a href="Sub Pages/vol-fluid-ounce-us.html">Fluid Ounce (US)</a></li>
+                    <li><a href="Sub Pages/vol-gallon-us.html">Gallon (US)</a></li>
+                    <li><a href="Sub Pages/vol-cubic-meter.html">Cubic Meter (m³)</a></li>
+                    <li><a href="Sub Pages/vol-cubic-foot.html">Cubic Foot (ft³)</a></li>
+                    <li><a href="Sub Pages/vol-cubic-yard.html">Cubic Yard (yd³)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#mass">Mass ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Sub Pages/mass.html">Mass</a></li>
+                    <li><a href="Sub Pages/mass-gram.html">Gram (g)</a></li>
+                    <li><a href="Sub Pages/mass-kilogram.html">Kilogram (kg)</a></li>
+                    <li><a href="Sub Pages/mass-tonne.html">Tonne (t)</a></li>
+                    <li><a href="Sub Pages/mass-ounce.html">Ounce (oz)</a></li>
+                    <li><a href="Sub Pages/mass-pound.html">Pound (lb)</a></li>
+                    <li><a href="Sub Pages/mass-short-ton.html">Short Ton</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#temperature">Temperature ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Sub Pages/temp.html">Temperature</a></li>
+                    <li><a href="Sub Pages/temp-celsius.html">Celsius (°C)</a></li>
+                    <li><a href="Sub Pages/temp-fahrenheit.html">Fahrenheit (°F)</a></li>
+                    <li><a href="Sub Pages/temp-kelvin.html">Kelvin (K)</a></li>
+                </ul>
+            </li>
+            <li><a href="#currency">Currency</a></li>
+            <li><a href="#history">History & Info</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <style>
+    nav ul { list-style:none; margin:0; padding:0; gap:10px; }
+    nav li { position:relative; }
+    .dropdown-menu { display:none; position:absolute; left:0; top:100%; background:#fff; padding:8px; border:1px solid #ddd; min-width:180px; z-index:50; }
+    .dropdown-menu li { margin:0; }
+    .dropdown-menu a { display:block; padding:4px 8px; color:#333; text-decoration:none; }
+    .dropdown:hover .dropdown-menu, .dropdown.open .dropdown-menu { display:block; }
+    /* Keep dropdown visible when its link is focused (after clicking anchor) */
+    .dropdown:focus-within .dropdown-menu { display:block; }
+    /* Use media query so desktop layout keeps flex, but mobile respects stylesheet that hides the list */
+    @media (min-width: 993px) {
+        nav ul { display: flex; }
+    }
+    </style>
+
+    <!-- ===============NAVBAR END=============== -->
+
+    <!-- ===============HOME SECTION=============== -->
+    <main>
+        <!-- <section id="home">
+            <h2>Welcome to the Metric Converter</h2>
+            <p>This site provides separate conversion pages for Length, Area, Volume, Mass, Temperature, and Currency.
+                Each page includes charts with multiplying factors and educational information about units, history, and
+                the SI system.</p>
+        </section> -->
+        <section id="home">
+        <h2 class="h1"> INTRODUCTION TO METRIC CONVERSION</h2>
+  <div class="container">
+    <p>
+      Metric conversions are the methods used to change a measurement from one metric unit to another
+      within the same system. The metric system is based on powers of ten, which makes conversions simple
+      and consistent. There are several main types of metric conversions. Length conversion involves
+      changing units such as millimeters, centimeters, meters, and kilometers, and it is used to measure
+      distance or height. Mass (or weight) conversion changes units like milligrams, grams, and kilograms,
+      which are used to measure how heavy an object is. Capacity (or volume) conversion includes units
+      such as milliliters and liters and is used to measure the amount of liquid a container can hold.
+      Temperature conversion involves converting between degrees Celsius and other temperature scales to
+      measure hotness or coldness. Area conversion changes units like square meters and square kilometers
+      to measure surface size, while volume conversion uses cubic units such as cubic centimeters or cubic
+      meters to measure space occupied by an object. All metric conversions rely on multiplying or
+      dividing by 10, 100, or 1,000, making the system easy to learn and use in science and daily life.
+    </p>
+  </div>
+</section> 
+
+        <!-- ===============HOME SECTION=============== -->
+
+        <!-- ===============LENGTH SECTION=============== -->
+
+        <section id="length">
+            <h2>Length Conversion</h2>
+            <div class="converter-grid">
+                <div>
+                    <div class="form-group">
+                        <label for="lengthValue">Value</label>
+                        <input type="number" id="lengthValue" step="any" placeholder="Enter value">
+                    </div>
+                    <div class="form-group">
+                        <label for="lengthFrom">From</label>
+                        <select id="lengthFrom"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="lengthTo">To</label>
+                        <select id="lengthTo"></select>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="convert('length')">Convert</button>
+                        <button class="clear-btn" onclick="clearFields('length')">Clear</button>
+                    </div>
+                    <div id="lengthResult" class="result"></div>
+                </div>
+
+                <div>
+                    <h3>Metric Conversion Chart</h3>
+                    <table id="lengthTable">
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Multiplying Factor</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============LENGTH SECTION=============== -->
+
+        <!-- ===============AREA SECTION=============== -->
+
+        <section id="area">
+            <h2>Area Conversion</h2>
+            <div class="converter-grid">
+                <div>
+                    <div class="form-group">
+                        <label for="areaValue">Value</label>
+                        <input type="number" id="areaValue" step="any" placeholder="Enter value">
+                    </div>
+                    <div class="form-group">
+                        <label for="areaFrom">From</label>
+                        <select id="areaFrom"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="areaTo">To</label>
+                        <select id="areaTo"></select>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="convert('area')">Convert</button>
+                        <button class="clear-btn" onclick="clearFields('area')">Clear</button>
+                    </div>
+                    <div id="areaResult" class="result"></div>
+                </div>
+                <div>
+                    <h3>Metric Conversion Chart</h3>
+                    <table id="areaTable">
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Multiplying Factor</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============AREA SECTION=============== -->
+
+        <!-- ===============VOLUME SECTION=============== -->
+
+        <section id="volume">
+            <h2>Volume Conversion</h2>
+            <div class="converter-grid">
+                <div>
+                    <div class="form-group">
+                        <label for="volumeValue">Value</label>
+                        <input type="number" id="volumeValue" step="any" placeholder="Enter value">
+                    </div>
+                    <div class="form-group">
+                        <label for="volumeFrom">From</label>
+                        <select id="volumeFrom"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="volumeTo">To</label>
+                        <select id="volumeTo"></select>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="convert('volume')">Convert</button>
+                        <button class="clear-btn" onclick="clearFields('volume')">Clear</button>
+                    </div>
+                    <div id="volumeResult" class="result"></div>
+                </div>
+                <div>
+                    <h3>Metric Conversion Chart</h3>
+                    <table id="volumeTable">
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Multiplying Factor</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============VOLUME SECTION=============== -->
+
+        <!-- ===============MASS SECTION=============== -->
+
+        <section id="mass">
+            <h2>Mass Conversion</h2>
+            <div class="converter-grid">
+                <div>
+                    <div class="form-group">
+                        <label for="massValue">Value</label>
+                        <input type="number" id="massValue" step="any" placeholder="Enter value">
+                    </div>
+                    <div class="form-group">
+                        <label for="massFrom">From</label>
+                        <select id="massFrom"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="massTo">To</label>
+                        <select id="massTo"></select>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="convert('mass')">Convert</button>
+                        <button class="clear-btn" onclick="clearFields('mass')">Clear</button>
+                    </div>
+                    <div id="massResult" class="result"></div>
+                </div>
+                <div>
+                    <h3>Metric Conversion Chart</h3>
+                    <table id="massTable">
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Multiplying Factor</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============MASS SECTION=============== -->
+
+        <!-- ===============TEMPERATURE SECTION=============== -->
+
+        <section id="temperature">
+            <h2>Temperature Conversion</h2>
+            <div class="converter-grid">
+                <div>
+                    <div class="form-group">
+                        <label for="tempValue">Value</label>
+                        <input type="number" id="tempValue" step="any" placeholder="Enter value">
+                    </div>
+                    <div class="form-group">
+                        <label for="tempFrom">From</label>
+                        <select id="tempFrom">
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="celsius">Celsius</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tempTo">To</label>
+                        <select id="tempTo">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                        </select>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="convert('temperature')">Convert</button>
+                        <button class="clear-btn" onclick="clearFields('temperature')">Clear</button>
+                    </div>
+                    <div id="tempResult" class="result"></div>
+                </div>
+                <div>
+                    <h3>Conversion Formulas</h3>
+                    <p>Fahrenheit to Celsius: (°F - 32) × 5/9</p>
+                    <p>Celsius to Fahrenheit: (°C × 9/5) + 32</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============TEMPERATURE SECTION=============== -->
+
+        <!-- ===============CURRENCY SECTION=============== -->
+
+        <section id="currency" class="currency-section">
+            <div class="currency-container">
+                <h2>Live Currency Converter</h2>
+                <p class="subtitle">Real-time exchange rates for 195+ countries</p>
+
+                <div class="converter-box currency-converter">
+                    <div class="currency-left">
+                        <div class="input-group">
+                            <input type="number" id="amount" value="1" placeholder="Enter amount" min="0">
+                            <input list="fromList" id="fromCurrency" placeholder="Type or choose currency">
+                            <datalist id="fromList"></datalist>
+                        </div>
+
+                        <button class="swap-btn" onclick="swapCurrencies()" title="Swap currencies">↔</button>
+
+                        <div class="input-group">
+                            <input list="toList" id="toCurrency" placeholder="Type or choose currency">
+                            <datalist id="toList"></datalist>
+                            <div id="result">Loading currencies...</div>
+                        </div>
+                    </div>
+
+                    <!-- right side removed to keep original simple layout -->
+                </div>
+
+                <p class="update-note">Rates updated live • Last updated: <span id="lastUpdate">just now</span></p>
+            </div>
+        </section>
+
+        <!-- ===============CURRENCY SECTION=============== -->
+
+        <!-- ===============HISTORY OF MEASUREMENT SECTION=============== -->
+        <section id="history">
+            <h2>History of Measurement Units</h2>
+            <p>The earliest recorded systems of weights and measures originate in the 3rd or 4th millennium BC in
+                Mesopotamia and Egypt. Early units were based on body parts, such as the cubit (forearm length) and
+                foot. Over time, systems became more standardized. In the 18th century, the metric system emerged in
+                France during the Revolution to create a universal, decimal-based system.</p>
+
+            <h3>History of Length Units</h3>
+            <p>The inch originated from the width of a man's thumb or three barleycorns. The foot was based on the
+                average length of a man's foot, standardized to 12 inches. The yard was originally the length of a man's
+                belt or from nose to fingertip. The mile comes from the Roman 'mille passus' (1000 paces), each pace
+                about 5 feet.</p>
+
+            <h3>History of Area Units</h3>
+            <p>The acre was defined as the area a team of oxen could plow in one day, standardized to 4840 square yards.
+                The hectare, part of the metric system, was introduced in 1795 as 100 ares (100 square meters each).
+                Square units like square inch and square foot evolved from their linear counterparts.</p>
+
+            <h3>History of Volume Units</h3>
+            <p>The gallon originated in medieval England as a wine measure, later standardized differently in US and UK.
+                The liter was defined in 1795 as one cubic decimeter. Fluid ounce derives from Roman 'uncia'. Cubic foot
+                and yard are volume extensions of length units, used in construction.</p>
+
+            <h3>History of Mass Units</h3>
+            <p>The ounce comes from Roman 'uncia' (1/12 pound). The pound (libra) was a Roman unit. The ton evolved from
+                'tun' (large cask). Gram and kilogram were introduced in the French metric system in 1795, with kilogram
+                originally based on water mass.</p>
+
+            <h3>History of Temperature Scales</h3>
+            <p>Fahrenheit scale was developed by Daniel Gabriel Fahrenheit in 1724, based on brine freezing and body
+                temperature. Celsius scale, originally centigrade, was proposed by Anders Celsius in 1742, with 0 as
+                boiling and 100 as freezing (later reversed).</p>
+        </section>
+
+        <!-- =============== HISTORY OF MEASURMENT SECTION =============== -->
+
+        <!-- =============== ARTICLE SECTION =============== -->
+
+        <section id="articles">
+            <h2>Related Articles</h2>
+            <h3>The SI System</h3>
+            <p>The International System of Units (SI) is the modern form of the metric system, established in 1960. It
+                defines seven base units: meter (length), kilogram (mass), second (time), ampere (current), kelvin
+                (temperature), mole (amount), candela (luminosity). SI is used worldwide for scientific and commercial
+                purposes.</p>
+
+            <h3>Metric System</h3>
+            <p>The metric system has variations: CGS (centimeter-gram-second), MKS (meter-kilogram-second), and SI
+                (which evolved from MKS). CGS is smaller scale, used in physics; MKS/SI larger, with SI adding more base
+                units and definitions based on constants.</p>
+
+            <h3>The Meter</h3>
+            <p>The meter was originally defined in 1791 as one ten-millionth of the distance from equator to North Pole.
+                In 1889, it was a platinum-iridium bar. In 1960, based on krypton wavelength; 1983, distance light
+                travels in 1/299,792,458 second.</p>
+
+            <h3>Traditional U.S. Units</h3>
+            <p>U.S. customary units derive from English units before 1824. Redefined in 1893 using metric standards
+                (e.g., yard = 0.9144 meter). Used in daily life, though metric is official for science. Includes inches,
+                feet, pounds, gallons.</p>
+        </section>
+
+        <!-- =============== ARTICLE SECTION =============== -->
+
+        <!-- =============== FREQUENTLY ASKED QUESTIONS SECTION =============== -->
+
+        <!-- <section id="faqs">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq">
+                <h3>a. How do I enter numbers in Scientific Notation?</h3>
+                <p>You can enter numbers like 1.23e6 or 1.23E6, which represents 1.23 × 10^6. The input field supports
+                    this format for large or small values.</p>
+            </div>
+            <div class="faq">
+                <h3>b. What is a knot? What is a nautical mile?</h3>
+                <p>A knot is a unit of speed equal to one nautical mile per hour, approximately 1.852 km/h or 1.151 mph.
+                    A nautical mile is about 1.852 km, based on one minute of latitude on Earth's surface.</p>
+            </div>
+            <div class="faq">
+                <h3>c. What about rainfall? How do I convert between inches of rain, and millimeters of rain?</h3>
+                <p>Rainfall is measured as depth, so use length conversion: 1 inch of rain = 25.4 millimeters of rain.
+                    Use the length converter for inches to millimeters.</p>
+            </div>
+            <div class="faq">
+                <h3>d. What is the difference between the long ton, short ton, and metric ton?</h3>
+                <p>Short ton (US): 2000 pounds (907 kg). Long ton (UK): 2240 pounds (1016 kg). Metric ton (tonne): 1000
+                    kilograms (2204.6 pounds).</p>
+            </div>
+            <div class="faq">
+                <h3>e. At what temperature are Celsius and Fahrenheit the same?</h3>
+                <p>Celsius and Fahrenheit are equal at -40 degrees.</p>
+            </div>
+        </section>
+    </main> -->
+
+        <section id="faqs">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq">
+                <h3>How do I enter numbers in Scientific Notation?<span class="arrow">⌄</span></h3>
+
+                <p>You can enter numbers like 1.23e6 or 1.23E6, which represents 1.23 × 10^6. The input field supports
+                    this format for large or small values.</p>
+            </div>
+            <div class="faq">
+                <h3>What is a knot? What is a nautical mile?<span class="arrow">⌄</span></h3>
+
+                <p>A knot is a unit of speed equal to one nautical mile per hour, approximately 1.852 km/h or 1.151 mph.
+                    A nautical mile is about 1.852 km, based on one minute of latitude on Earth's surface.</p>
+            </div>
+            <div class="faq">
+                <h3>What about rainfall? How do I convert between inches of rain, and millimeters of rain?<span
+                    class="arrow">⌄</span></h3>
+                <p>Rainfall is measured as depth, so use length conversion: 1 inch of rain = 25.4 millimeters of rain.
+                    Use the length converter for inches to millimeters.</p>
+            </div>
+            <div class="faq">
+                <h3>What is the difference between the long ton, short ton, and metric ton?<span
+                    class="arrow">⌄</span></h3>
+                <p>Short ton (US): 2000 pounds (907 kg). Long ton (UK): 2240 pounds (1016 kg). Metric ton (tonne): 1000
+                    kilograms (2204.6 pounds).</p>
+            </div>
+            <div class="faq">
+                <h3>At what temperature are Celsius and Fahrenheit the same?<span class="arrow">⌄</span></h3>
+                <p>Celsius and Fahrenheit are equal at -40 degrees.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- =============== FREQUENTLY ASKED QUESTIONS SECTION =============== -->
+
+    <!-- ===============FOOTER START=============== -->
+
+    <!-- Font Awesome CDN   -->
+
+    <!-- 
+    <footer class="footer">
+        <div class="footer-container">
+
+           
+
+            <div class="footer-box follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+         
+
+            <div class="footer-box contact-us">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+                <p><i class="fas fa-location-dot"></i> Karachi, Pakistan</p>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <div class="copyright">
+
+        © 2025 Aptech Metric Conversions – Accurate Conversions & Learning Resources
+
+    </div> -->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- LEFT : FOLLOW US -->
+            <div class="footer-box follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- CENTER : LOGO + TEXT -->
+            <div class="footer-box footer-center">
+                <img src="images/logo.png" alt="Logo" class="footer-logo-center">
+                <p>Accurate Conversions & Learning</p>
+            </div>
+
+            <!-- RIGHT : CONTACT US -->
+            <div class="footer-box contact-us">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+                <p><i class="fas fa-location-dot"></i> Karachi, Pakistan</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2025 Metric Conversions – Accurate Conversions & Learning Resources
+    </div>
+
+
+    <!-- ===============FOOTER END=============== -->
+
+    <!-- ==============JAVA SCRIPT LINK=============== -->
+
+    <script src="JavaScript/Script.js"></script>
+
+    <!-- ==============JAVA SCRIPT LINK=============== -->
+</body>
+
+</html>

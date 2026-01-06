@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubic Foot (ft³)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <body>
+    <div class="top-header">
+        <h1>Metric Conversion</h1>
+        <img src="../images/logo.png" class="header-logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li class="dropdown"><a href="../index.html#length">Length ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="length.html">Length</a></li>
+                    <li><a href="length-millimeter.html">Millimeter (mm)</a></li>
+                    <li><a href="length-centimeter.html">Centimeter (cm)</a></li>
+                    <li><a href="length-meter.html">Meter (m)</a></li>
+                    <li><a href="length-kilometer.html">Kilometer (km)</a></li>
+                    <li><a href="length-inch.html">Inch (in)</a></li>
+                    <li><a href="length-foot.html">Foot (ft)</a></li>
+                    <li><a href="length-yard.html">Yard (yd)</a></li>
+                    <li><a href="length-mile.html">Mile (mi)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#area">Area ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="area.html">Area</a></li>
+                    <li><a href="area-square-millimeter.html">Square Millimeter (mm²)</a></li>
+                    <li><a href="area-square-meter.html">Square Meter (m²)</a></li>
+                    <li><a href="area-hectare.html">Hectare (ha)</a></li>
+                    <li><a href="area-square-kilometer.html">Square Kilometer (km²)</a></li>
+                    <li><a href="area-square-inch.html">Square Inch (in²)</a></li>
+                    <li><a href="area-square-foot.html">Square Foot (ft²)</a></li>
+                    <li><a href="area-square-yard.html">Square Yard (yd²)</a></li>
+                    <li><a href="area-acre.html">Acre</a></li>
+                    <li><a href="area-square-mile.html">Square Mile (mi²)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#volume">Volume ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="vol.html">Volume</a></li>
+                    <li><a href="vol-milliliter.html">Milliliter (mL)</a></li>
+                    <li><a href="vol-liter.html">Liter (L)</a></li>
+                    <li><a href="vol-fluid-ounce-us.html">Fluid Ounce (US)</a></li>
+                    <li><a href="vol-gallon-us.html">Gallon (US)</a></li>
+                    <li><a href="vol-cubic-meter.html">Cubic Meter (m³)</a></li>
+                    <li><a href="vol-cubic-foot.html">Cubic Foot (ft³)</a></li>
+                    <li><a href="vol-cubic-yard.html">Cubic Yard (yd³)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#mass">Mass ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mass.html">Mass</a></li>
+                    <li><a href="mass-gram.html">Gram (g)</a></li>
+                    <li><a href="mass-kilogram.html">Kilogram (kg)</a></li>
+                    <li><a href="mass-tonne.html">Tonne (t)</a></li>
+                    <li><a href="mass-ounce.html">Ounce (oz)</a></li>
+                    <li><a href="mass-pound.html">Pound (lb)</a></li>
+                    <li><a href="mass-short-ton.html">Short Ton</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#temperature">Temperature ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="temp.html">Temperature</a></li>
+                    <li><a href="temp-celsius.html">Celsius (°C)</a></li>
+                    <li><a href="temp-fahrenheit.html">Fahrenheit (°F)</a></li>
+                    <li><a href="temp-kelvin.html">Kelvin (K)</a></li>
+                </ul>
+            </li>
+            <li><a href="../index.html#currency">Currency</a></li>
+            <li><a href="../index.html#history">History & Info</a></li>
+            <li><a href="../index.html#articles">Articles</a></li>
+            <li><a href="../index.html#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        nav ul { list-style:none; margin:0; padding:0; display:flex; gap:10px; flex-wrap:wrap; }
+        nav li { position:relative; }
+        .dropdown-menu { display:none; position:absolute; left:0; top:100%; background:#fff; padding:8px; border:1px solid #ddd; min-width:180px; z-index:50; }
+        .dropdown-menu li { margin:0; }
+        .dropdown-menu a { display:block; padding:4px 8px; color:#333; text-decoration:none; }
+        .dropdown:hover .dropdown-menu, .dropdown.open .dropdown-menu { display:block; }
+        .dropdown:focus-within .dropdown-menu { display:block; }
+        .h1 { text-align:center; font-size:2rem; margin:1rem 0; }
+        h2 { margin-top:1.5rem; }
+    </style>
+    <a href="../index.html" class="btn btn-secondary back-link">← Back</a>
+    <h1 class="h1"> CUBIC FOOT (ft³) </h1>
+    <div class="container">
+        <p>The cubic foot is used mainly in the United States, Canada and the United Kingdom as a measurement of volume.
+
+            Definition:
+
+            A cubic measurement is the three-dimensional derivative of a linear measure, so a cubic foot is defined as
+            the volume of a cube with sides 1 ft in length.
+
+            In metric terms a cubic foot is a cube with sides 0.3048 metres in length. One cubic foot is the equivalent
+            to approximately 0.02831685 cubic metres, or 28.3169 litres.
+
+            Origin:
+
+            The origin of the unit of measurement known as cubic feet can be traced back to ancient civilizations. The
+            concept of measuring volume was essential for various purposes, such as trade, construction, and
+            agriculture. The ancient Egyptians, for example, used a system of measurement based on the human body, where
+            the cubit was the length from the elbow to the tip of the middle finger. They would use this unit to measure
+            the dimensions of buildings and other structures. Over time, the need for a more standardized unit of volume
+            measurement arose. The cubic foot was developed as a result, representing the volume of a cube with sides
+            measuring one foot in length. This unit was widely adopted in the English-speaking world and became an
+            important part of various industries, including construction, engineering, and manufacturing.ent and
+            adoption have played a significant role in various industries, making it an important unit of measurement in
+            many parts of the world.
+
+            Common references:
+
+            A standard (20 ft x 8ft x 8 ft 6 in) shipping container has a volume of 1,360 cubic feet.
+
+            19-22 cubic feet would describe an average size refrigerator sufficient for a family of four.
+
+            Usage context:
+
+            One of the most common usage contexts of cubic feet is in construction and architecture. Builders and
+            contractors often use this unit to measure the volume of materials such as concrete, lumber, or gravel
+            needed for a project. For example, when pouring a foundation, the amount of concrete required may be
+            specified in cubic feet. Similarly, when determining the amount of flooring or paint needed for a room,
+            cubic feet can be used to calculate the volume of the space.</p>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-box footer-center">
+                <img src="../images/logo.png" alt="Logo" class="footer-logo-center">
+                <p>Accurate Conversions & Learning</p>
+            </div>
+            <div class="footer-box contact-us">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+                <p><i class="fas fa-location-dot"></i> Karachi, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        © 2025 Metric Conversions – Accurate Conversions & Learning Resources
+    </div>
+    <script src="../JavaScript/Script.js"></script>
+</body>
+
+</html>

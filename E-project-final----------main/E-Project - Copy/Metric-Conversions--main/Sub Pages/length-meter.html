@@ -1,0 +1,265 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centimeter (cm)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="top-header">
+        <h1>Metric Conversion</h1>
+        <img src="../images/logo.png" class="header-logo" alt="logo">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li class="dropdown"><a href="../index.html#length">Length ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="length.html">Length</a></li>
+                    <li><a href="length-millimeter.html">Millimeter (mm)</a></li>
+                    <li><a href="length-centimeter.html">Centimeter (cm)</a></li>
+                    <li><a href="length-meter.html">Meter (m)</a></li>
+                    <li><a href="length-kilometer.html">Kilometer (km)</a></li>
+                    <li><a href="length-inch.html">Inch (in)</a></li>
+                    <li><a href="length-foot.html">Foot (ft)</a></li>
+                    <li><a href="length-yard.html">Yard (yd)</a></li>
+                    <li><a href="length-mile.html">Mile (mi)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#area">Area ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="area.html">Area</a></li>
+                    <li><a href="area-square-millimeter.html">Square Millimeter (mm²)</a></li>
+                    <li><a href="area-square-meter.html">Square Meter (m²)</a></li>
+                    <li><a href="area-hectare.html">Hectare (ha)</a></li>
+                    <li><a href="area-square-kilometer.html">Square Kilometer (km²)</a></li>
+                    <li><a href="area-square-inch.html">Square Inch (in²)</a></li>
+                    <li><a href="area-square-foot.html">Square Foot (ft²)</a></li>
+                    <li><a href="area-square-yard.html">Square Yard (yd²)</a></li>
+                    <li><a href="area-acre.html">Acre</a></li>
+                    <li><a href="area-square-mile.html">Square Mile (mi²)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#volume">Volume ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="vol.html">Volume</a></li>
+                    <li><a href="vol-milliliter.html">Milliliter (mL)</a></li>
+                    <li><a href="vol-liter.html">Liter (L)</a></li>
+                    <li><a href="vol-fluid-ounce-us.html">Fluid Ounce (US)</a></li>
+                    <li><a href="vol-gallon-us.html">Gallon (US)</a></li>
+                    <li><a href="vol-cubic-meter.html">Cubic Meter (m³)</a></li>
+                    <li><a href="vol-cubic-foot.html">Cubic Foot (ft³)</a></li>
+                    <li><a href="vol-cubic-yard.html">Cubic Yard (yd³)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#mass">Mass ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mass.html">Mass</a></li>
+                    <li><a href="mass-gram.html">Gram (g)</a></li>
+                    <li><a href="mass-kilogram.html">Kilogram (kg)</a></li>
+                    <li><a href="mass-tonne.html">Tonne (t)</a></li>
+                    <li><a href="mass-ounce.html">Ounce (oz)</a></li>
+                    <li><a href="mass-pound.html">Pound (lb)</a></li>
+                    <li><a href="mass-short-ton.html">Short Ton</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="../index.html#temperature">Temperature ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="temp.html">Temperature</a></li>
+                    <li><a href="temp-celsius.html">Celsius (°C)</a></li>
+                    <li><a href="temp-fahrenheit.html">Fahrenheit (°F)</a></li>
+                    <li><a href="temp-kelvin.html">Kelvin (K)</a></li>
+                </ul>
+            </li>
+            <li><a href="../index.html#currency">Currency</a></li>
+            <li><a href="../index.html#history">History & Info</a></li>
+            <li><a href="../index.html#articles">Articles</a></li>
+            <li><a href="../index.html#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+    <a href="../index.html" class="btn btn-secondary back-link">← Back</a>
+    <h1 class="h1">CENTIMETER (cm)</h1>
+
+    <style>
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background: #fff;
+            padding: 8px;
+            border: 1px solid #ddd;
+            min-width: 180px;
+            z-index: 50;
+        }
+
+        .dropdown-menu li {
+            margin: 0;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 4px 8px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-menu,
+        .dropdown.open .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown:focus-within .dropdown-menu {
+            display: block;
+        }
+
+        .h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        h2 {
+            margin-top: 1.5rem;
+        }
+    </style>
+    The centimetre is used worldwide as a measurement of length. There are a few exceptions, most notably the United
+    States, which still primarily uses the U.S. Customary (similar to imperial) system.
+
+    Definition:
+
+    The centimetre is a unit of length in the metric system, equal to one-hundredth of a metre.
+
+    1cm is equivalent to 0.39370 inches.
+
+    Origin:
+
+    The metric, or decimal, system of weights and measures was defined and adopted in France in 1795. Using the metre as
+    the basis for length measurements, the system is now used officially across the globe.
+
+    John Wilkins was the first person to publicly recognise the need for a universal length measurement, ie a
+    measurement that could be carried out locally to avoid having to have a definition that refereed to a stored
+    reference unit. He proposed using the length of a “seconds pendulum”. - a pendulum that made half an oscillation per
+    second – as he believed this would have a fixed length. It was later found there is a slight difference in this
+    length around the world. Because of this, the Academy of Sciences devised a new measure, 1/10000000 of the distance
+    from the Equator to the North Pole (measured through Paris). This new value was used to create a metal bar stored at
+    the BIPM’s headquarters known as the “international prototype meter”. This standard has since been superseded by
+    more accurate measures –first by the 11th conference of weights and measures, who defined the meter as “1,650763.73
+    wavelengths of the orange-red emission line of a krypton-86 atom in a vacuum”. Most recently, in 1983, the 17th
+    conference defined the meter as “the distance travelled by light in a vacuum in 1/299792458 of a second”. From this
+    we derive the centimetre as the distance travelled by light in a vacuum in 1/2997924580 of a second.
+
+    Defined at the 17th Conférence Générale des Poids et Mesures (CGPM)
+
+    The origin of centimeters can be traced back to the French Revolution in the late 18th century. During this time,
+    there was a need for a standardized system of measurement that would be universally accepted and easily understood.
+    The French Academy of Sciences took on the task of creating such a system, and in 1791, they introduced the metric
+    system.
+
+    The metric system was based on decimal units, with the meter as the fundamental unit of length. The meter was
+    defined as one ten-millionth of the distance from the North Pole to the equator, passing through Paris. However, the
+    meter was considered too large for everyday use, so it was divided into smaller units, including the centimeter. The
+    centimeter was defined as one-hundredth of a meter, making it a convenient unit for measuring smaller lengths. It
+    quickly gained popularity not only in France but also in other countries that adopted the metric system. The
+    simplicity and ease of conversion within the metric system made centimeters a practical choice for various
+    applications, such as measuring lengths in science, engineering, and everyday life..
+
+    Common references:
+
+    A United States nickel (5 cent) coin is approximately 2cm diameter.
+
+    The cornea of a human eye is approximately 1.15cm (11.5mm) diameter.
+
+    One imperial foot is equal to approximately 30.5cm.
+
+    1 inch, 2.54 cm
+
+    1 metre, 100 cm
+
+    30 cm is approximately equal to 1 foot (actually 11.81 inches)
+
+    A standard number 2 pencil is 19cm long when new
+
+    An average mug from Ikea is about 10cm tall
+
+    Theaveragebody.com reports that the palm of an average male is 8.4cm wide and an average female hand is 7.4cm wide
+
+    Usage context:
+
+    The centimetre is used worldwide as a measurement of length. There are a few exceptions, most notably the United
+    States, which still primarily uses the U.S. Customary (similar to imperial) system.
+
+    Centimeters are a commonly used unit of measurement in various contexts due to their versatility and ease of use.
+    One of the primary usage contexts for centimeters is in the field of construction and engineering. Centimeters are
+    often used to measure the dimensions of objects, such as the length, width, and height of buildings, furniture, or
+    other structures. This allows for precise and accurate calculations when planning and designing projects.
+
+    Centimeters are also frequently used in the field of science, particularly in laboratory settings. Scientists use
+    centimeters to measure the size of specimens, the distance between objects, or the volume of liquids. This is
+    crucial for conducting experiments and recording data with precision.
+
+    In addition, centimeters are commonly used in the fashion and textile industry. They are used to measure body
+    dimensions for clothing sizing, ensuring a proper fit for customers. Centimeters are also used in the production of
+    fabrics, where the length and width of materials need to be accurately measured and cut.
+    </p>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- LEFT : FOLLOW US -->
+            <div class="footer-box follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- CENTER : LOGO + TEXT -->
+            <div class="footer-box footer-center">
+                <img src="../images/logo.png" alt="Logo" class="footer-logo-center">
+                <p>Accurate Conversions & Learning</p>
+            </div>
+
+            <!-- RIGHT : CONTACT US -->
+            <div class="footer-box contact-us">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+                <p><i class="fas fa-location-dot"></i> Karachi, Pakistan</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2025 Metric Conversions – Accurate Conversions & Learning Resources
+    </div>
+
+
+    <!-- ===============FOOTER END=============== -->
+
+    <script src="../JavaScript/Script.js"></script>
+</body>
+
+</html>
